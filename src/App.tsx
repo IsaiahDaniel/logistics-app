@@ -19,7 +19,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        {/* <Route path="/" element={<Login />} /> */}
+        
+        <Route path="/" element={<Dashboard />} />
         <Route path="/register" element={<Register />} />
 
         <Route path="/dashboard" element={<Dashboard />} />
@@ -34,9 +36,6 @@ const App = () => {
         <Route path="/shipping-calulator" element={<ShippingCalculator />} />
         <Route path="/shipping-calulator/international" element={<ShippingCalculatorInternational />} />
         <Route path="/shipping-calulator/inter-state" element={<ShippingInterState />} />        
-        {/* <Route element={<PrivateRoute />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Route> */}
 
       </Routes>
     </Router>
